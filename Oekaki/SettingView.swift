@@ -25,7 +25,6 @@ struct SettingView: View {
                         if value == self.colors.count - 1 {
                             HStack {
                                 Text("消しゴム")
-                                // 消しゴム用？
                                 Image(systemName: "square")
                             }
                         } else {
@@ -33,7 +32,6 @@ struct SettingView: View {
                                 Text(cnames[value])
                                 Image(systemName: "paintbrush.fill")
                                     .foregroundColor(self.colors[value])
-                                //    .background(self.colors[value])
                             }
                         }
                     }
