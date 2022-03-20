@@ -21,7 +21,7 @@ struct SettingView: View {
             HStack {
                 Text("色")
                 Picker(selection: $colorSel, label: Text("色").frame(width: 40)) {
-                    ForEach(0..<colors.count){value in
+                    ForEach(0..<colors.count, id:\.self){value in
                         if value == self.colors.count - 1 {
                             HStack {
                                 Text("消しゴム")
